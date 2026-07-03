@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakanDulu | Menu Planner</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/planner.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">MakanDulu</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="planner.html" class="nav-link active">Planner</a>
+        </div>
+    </nav>
+
+    <main class="planner-container">
+        <section class="menu-section">
+            <h2>Menu Planner</h2>
+            <p class="subtitle">Pilih menu yang ingin kamu makan hari ini</p>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="Makanan Pokok">Pokok</button>
+                <button class="filter-btn" data-filter="Lauk-Pauk">Lauk</button>
+                <button class="filter-btn" data-filter="Sayur">Sayur</button>
+                <button class="filter-btn" data-filter="Buah">Buah</button>
+                <button class="filter-btn" data-filter="Minuman">Minuman</button>
+            </div>
+            
+            <div class="menu-table-header">
+                <div>Gambar</div>
+                <div>Nama Menu</div>
+                <div>Kategori</div>
+                <div>Kalori</div>
+                <div>Harga</div>
+                <div>Pilih</div>
+            </div>
+
+            <div id="menu-cards-container"></div>
+        </section>
+
+        <aside class="result-section">
+            <div class="result-sticky-panel">
+                
+                <div id="empty-state-view">
+                    <p>Belum ada menu dipilih</p>
+                </div>
+
+                <div id="active-state-view" class="hidden">
+                    <h3 class="panel-subtitle">MENU DIPILIH</h3>
+                    <div id="selected-image-grid" class="image-grid-stack"></div>
+                    
+                    <div class="total-summary-box">
+                        <div class="summary-row">
+                            <span>Total Kalori</span>
+                            <strong><span id="label-total-calories">0</span> kkal</strong>
+                        </div>
+                        <div class="summary-row">
+                            <span>Total Harga</span>
+                            <strong>Rp <span id="label-total-price">0</span></strong>
+                        </div>
+                    </div>
+
+                    <div class="nutrition-checklist-box">
+                        <h3 class="panel-subtitle">KELENGKAPAN GIZI</h3>
+                        <ul id="checklist-group">
+                            <li id="item-pokok" class="status-unfulfilled">Makanan Pokok</li>
+                            <li id="item-lauk" class="status-unfulfilled">Lauk-Pauk</li>
+                            <li id="item-sayur" class="status-unfulfilled">Sayur</li>
+                            <li id="item-buah" class="status-unfulfilled">Buah</li>
+                            <li id="item-minuman" class="status-unfulfilled">Minuman</li>
+                        </ul>
+                    </div>
+
+                    <button id="btn-clear-all" class="btn-clear">Hapus Semua Pilihan</button>
+
+                    <div id="badge-menu-seimbang" class="success-badge hidden">
+                        Menu Seimbang Terpenuhi!
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="js/planner.js"></script>
+</body>
+</html>
