@@ -1,3 +1,4 @@
+/* ─── LAYOUT UTAMA ───────────────────────────────────────────── */
 .planner-container {
     display: flex;
     gap: 2rem;
@@ -15,6 +16,7 @@
     margin-bottom: 1.5rem;
 }
 
+/* ─── FILTER TABS ────────────────────────────────────────────── */
 .filter-tabs {
     display: flex;
     gap: 0.6rem;
@@ -45,6 +47,7 @@
     border-color: var(--primary-solid);
 }
 
+/* ─── TABLE & MENU CARDS ────────────────────────────────────────── */
 .menu-table-header {
     display: grid;
     grid-template-columns: 55px 2fr 1.5fr 1fr 1fr 50px;
@@ -103,6 +106,7 @@
     pointer-events: none;
 }
 
+/* ─── PANEL KANAN  ──────────────────────────────────────────── */
 .result-section {
     flex: 0.8;
     min-width: 280px;
@@ -242,10 +246,14 @@
     font-size: 1rem;
 }
 
-/* RESPONSIVITAS*/
+/* ─── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 1024px) {
-    .planner-container { flex-direction: column; }
-    .result-sticky-panel { position: static; }
+    .planner-container { 
+        flex-direction: column; 
+    }
+    .result-sticky-panel { 
+        position: static; 
+    }
 }
 
 @media (max-width: 640px) {

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MakanDulu | Rencanakan Hidup Sehatmu</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/landing.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakanDulu | Rencanakan Makanmu</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- NAV -->
     <nav class="navbar">
         <div class="nav-brand">MakanDulu</div>
         <div class="nav-links">
@@ -17,30 +21,203 @@
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>Makan Sehat Jadi Lebih Teratur & Terukur</h1>
-                <p>Singkirkan kebingungan memilih menu harian. Pilih kombinasi makanan favoritmu, pantau kecukupan gizi, dan hitung pengeluaran secara real-time.</p>
-                <a href="planner.html" class="cta-button">Mulai Atur Menu Sekarang</a>
+    <!-- HERO -->
+    <section class="hero hero-centered">
+        <img src="assets/background.jpeg" alt="Background Makanan" class="hero-bg-full">
+        <div class="hero-bg-dots" id="heroDots"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Makan Enak <br><em>Tanpa Ribet</em></h1>
+            <p class="hero-desc">Atur menu harianmu, pilih makanan favorit sesukamu, dan jaga budget makan tetap aman secara real-time. Makan enak dan puas itu nggak harus mahal kok!</p>
+            <div class="hero-actions">
+                <a href="planner.html" class="btn-primary">Mulai Rencanakan →</a>
             </div>
-            
             <div class="hero-stats">
-                <div class="stat-box">
-                    <h3>1,000+</h3>
-                    <p>Pengguna Aktif</p>
+                <div class="stat">
+                    <span class="stat-num">26+</span>
+                    <span class="stat-label">Pilihan Menu</span>
                 </div>
-                <div class="stat-box">
-                    <h3>26</h3>
-                    <p>Pilihan Menu Sehat</p>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">5</span>
+                    <span class="stat-label">Kategori Gizi</span>
                 </div>
-                <div class="stat-box">
-                    <h3>100%</h3>
-                    <p>Real-time Tracking</p>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num">1.200+</span>
+                    <span class="stat-label">Pengguna Aktif</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- MENU FAVORIT -->
+    <section class="menu-favorit" id="menu-favorit">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Menu Pilihan</span>
+                <h2>Favorit Para <em>Pengguna Kami</em></h2>
+            </div>
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="assets/ayam-goreng-tepung.jpg" alt="Ayam Goreng Tepung" class="menu-food-img" />
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-cat">Lauk-Pauk</span>
+                        <h4>Ayam Goreng Tepung</h4>
+                        <div class="menu-meta">
+                            <span>300 kkal</span>
+                            <span>Rp 17.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="assets/nasi-goreng-spesial.jpg" alt="Nasi Goreng Spesial" class="menu-food-img" />
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-cat">Makanan Pokok</span>
+                        <h4>Nasi Goreng Spesial</h4>
+                        <div class="menu-meta">
+                            <span>450 kkal</span>
+                            <span>Rp 18.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="assets/gado-gado.jpg" alt="Gado-Gado" class="menu-food-img" />
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-cat">Sayur</span>
+                        <h4>Gado-Gado</h4>
+                        <div class="menu-meta">
+                            <span>280 kkal</span>
+                            <span>Rp 16.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="assets/jus-alpukat.jpg" alt="Jus Alpukat" class="menu-food-img" />
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-cat">Minuman</span>
+                        <h4>Jus Alpukat</h4>
+                        <div class="menu-meta">
+                            <span>230 kkal</span>
+                            <span>Rp 18.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="assets/rendang-daging-sapi.jpg" alt="Rendang Daging Sapi" class="menu-food-img" />
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-cat">Lauk-Pauk</span>
+                        <h4>Rendang Daging Sapi</h4>
+                        <div class="menu-meta">
+                            <span>380 kkal</span>
+                            <span>Rp 32.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="menu-img-wrap">
+                        <img src="assets/pisang.jpg" alt="Pisang" class="menu-food-img" />
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-cat">Buah</span>
+                        <h4>Pisang (1 buah)</h4>
+                        <div class="menu-meta">
+                            <span>105 kkal</span>
+                            <span>Rp 5.000</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="menu-cta">
+                <p>Dan 20 menu lainnya menunggumu di Planner!</p>
+                <a href="planner.html" class="btn-primary">Lihat Semua Menu →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="testimoni">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimoni</span>
+                <h2>Kata Mereka yang <em>Sudah Coba</em></h2>
+            </div>
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"MakanDulu beneran penyelamat anak kos! Pilihan makanannya enak-enak banget, dan yang paling penting porsinya bikin kenyang tapi nggak bikin kantong kering"</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">CR</div>
+                        <div>
+                            <strong>Cierlary</strong>
+                            <span>Mahasiswi, Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card testi-featured">
+                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Akhirnya bisa nemu website yang ngasih rekomendasi makanan enak tapi ramah di dompet. Dompet aman, perut pun selalu senang tiap bulan"</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">RV</div>
+                        <div>
+                            <strong>Rivera</strong>
+                            <span>Karyawan, Bandung</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Tampilannya bersih banget dan mudah dipakai. Menu rekomendasi harian di sini beneran menggugah selera, bervariasi, dan harganya super terjangkau"</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">JM</div>
+                        <div>
+                            <strong>Juminten</strong>
+                            <span>Ibu Rumah Tangga, Indramayu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BOTTOM -->
+    <section class="cta-bottom">
+        <div class="container">
+            <h2>Siap Makan Lebih Enak <em>Hari Ini?</em></h2>
+            <p>Mulai rencanakan menumu sekarang! Gratis, tanpa daftar, langsung pakai.</p>
+            <a href="planner.html" class="btn-primary btn-large">Buka Menu Planner →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span class="footer-logo">MakanDulu</span>
+                <span class="footer-copyright">© 2026 Tugas Besar Web Client Development</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="planner.html">Menu Planner</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

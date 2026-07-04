@@ -1,4 +1,3 @@
-// --- planner.js ---
 const dataMenuMakanan = [
     { id: 1, nama: "Nasi Putih", kategori: "Makanan Pokok", kalori: 180, harga: 5000, gambar: "assets/nasi-putih.jpg" },
     { id: 2, nama: "Nasi Goreng Spesial", kategori: "Makanan Pokok", kalori: 450, harga: 18000, gambar: "assets/nasi-goreng-spesial.jpg" },
